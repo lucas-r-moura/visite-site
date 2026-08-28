@@ -1,0 +1,29 @@
+# Dependencies and local builds
+node_modules/
+node_modules_antigo/
+.next/
+.out/
+out/
+.pnpm-store/
+.vercel/
+
+# Local environment and logs
+.env*
+!.env.example
+tmp/
+*.log
+
+# Internal client materials (not used by the public website)
+02 APLICAÇÕES/
+FONTES/
+LOGOS/
+*.pdf
+perguntas para o site.txt
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+.vercel

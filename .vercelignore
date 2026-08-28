@@ -1,0 +1,13 @@
+node_modules/
+node_modules_antigo/
+.next/
+.pnpm-store/
+.vercel/
+tmp/
+.env*
+02 APLICAÇÕES/
+FONTES/
+LOGOS/
+*.pdf
+perguntas para o site.txt
+*.log
