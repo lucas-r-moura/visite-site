@@ -13,7 +13,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-links">
         <InstagramLink location="footer" />
-        <a href="mailto:lucasrmoura94@gmail.com">lucasrmoura94@gmail.com</a>
+        <a href="mailto:comercial@visiteconexoes.com.br">comercial@visiteconexoes.com.br</a>
         <Link href="/privacidade">Privacidade</Link>
         <Link href="/termos">Termos de uso</Link>
       </div>

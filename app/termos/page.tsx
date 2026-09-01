@@ -16,7 +16,7 @@ export default function Termos() {
       <h2>Alterações</h2>
       <p>Estes termos podem ser atualizados a qualquer momento. Recomendamos a consulta periódica desta página.</p>
       <h2>Contato</h2>
-      <p>Para dúvidas, escreva para lucasrmoura94@gmail.com.</p>
+      <p>Para dúvidas comerciais, escreva para comercial@visiteconexoes.com.br.</p>
     </article>
   );
 }
