@@ -30,7 +30,7 @@ const realCases = [
     lead: "A ativação convidou fãs a entrar no universo do artista e sentir, por alguns minutos, como seria ocupar o seu palco.",
     connection: "A VISITE atuou presencialmente na organização da experiência e na distribuição de fitas salva celular, aproximando a JBL do público com uma entrega útil, segura e memorável.",
     stats: [["Fãs", "no centro da ativação"], ["Presença", "funcional e emocional"]],
-    images: ["/cases/luan-santana.webp"],
+    images: ["/cases/luan-01.webp", "/cases/luan-02.webp", "/cases/luan-03.webp", "/cases/luan-04.webp"],
   },
   {
     number: "04",
@@ -77,7 +77,7 @@ export default function CasesPage() {
               {item.images.length ? (
                 <>
                   <div className="real-case-cover"><Image src={item.images[0]} alt={`${item.title} — registro principal`} fill priority={itemIndex === 0} sizes="(max-width: 860px) 100vw, 53vw" /></div>
-                  <div className="real-case-gallery">
+                  <div className={`real-case-gallery${item.images.length === 4 ? " real-case-gallery-three" : ""}`}>
                     {item.images.slice(1).map((image, index) => <div key={image}><Image src={image} alt={`${item.title} — registro ${index + 2}`} fill sizes="(max-width: 860px) 50vw, 26vw" /></div>)}
                   </div>
                 </>
