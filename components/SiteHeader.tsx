@@ -11,7 +11,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-header-inner shell">
         <Link href="/" className="header-logo" onClick={() => setOpen(false)}>
-          <BrandLogo priority />
+          <BrandLogo priority variant="wordmark" />
         </Link>
 
         <button

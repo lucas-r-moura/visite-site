@@ -74,6 +74,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .header-logo, .footer-logo { display: block; width: 148px; height: 52px; overflow: hidden; flex: 0 0 auto; }
 .brand-logo { display: block; width: 100%; height: 100%; position: relative; overflow: hidden; }
 .brand-logo img { width: 100%; height: 100%; object-fit: contain; transform: scale(1.62); }
+.brand-logo-wordmark img { transform: scale(1.78); }
 .main-nav { display: flex; gap: 26px; margin-left: auto; }
 .main-nav a { color: #d2cccf; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; transition: color 160ms ease; }
 .main-nav a:hover { color: var(--yellow); }

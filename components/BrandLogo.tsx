@@ -1,11 +1,21 @@
 import Image from "next/image";
 
-export function BrandLogo({ priority = false }: { priority?: boolean }) {
+type BrandLogoProps = {
+  priority?: boolean;
+  variant?: "complete" | "wordmark";
+};
+
+export function BrandLogo({ priority = false, variant = "complete" }: BrandLogoProps) {
+  const isWordmark = variant === "wordmark";
+
   return (
-    <span className="brand-logo" aria-label="VISITE - conexões estratégicas">
+    <span
+      className={`brand-logo${isWordmark ? " brand-logo-wordmark" : ""}`}
+      aria-label={isWordmark ? "VISITE" : "VISITE - conexões estratégicas"}
+    >
       <Image
-        src="/assets/visite-logo.png"
-        alt="VISITE - conexões estratégicas"
+        src={isWordmark ? "/assets/visite-logo-wordmark.png" : "/assets/visite-logo.png"}
+        alt={isWordmark ? "VISITE" : "VISITE - conexões estratégicas"}
         width={1920}
         height={1080}
         priority={priority}
