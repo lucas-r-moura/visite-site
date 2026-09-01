@@ -1,52 +1,53 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ContactSection } from "@/components/ContactSection";
+import { ArrowUpRight } from "@/components/ArrowUpRight";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 const realCases = [
   {
     number: "01",
-    tag: <>JBL + <strong>GUNS N’ ROSES</strong> · BRASIL 2026</>,
-    title: "Uma ativação na dimensão de uma turnê histórica",
-    lead: "Um item promocional passou a fazer parte do visual do público e da atmosfera dos shows.",
-    connection: <>A VISITE articulou e executou a ativação nas sete cidades, coordenando equipes, entregas e parceiros para transformar a distribuição em um ponto real de contato entre JBL, <strong>Guns N’ Roses</strong> e milhares de fãs.</>,
-    stats: [["7", "cidades brasileiras"], ["100 mil", "bandanas distribuídas"]],
-    images: ["/cases/guns-01.webp", "/cases/guns-02.webp", "/cases/guns-03.webp"],
-  },
-  {
-    number: "02",
-    tag: <><strong>MENOS É MAIS</strong> · EMBAIXADORES</>,
-    title: "Influência construída a partir das conexões certas",
-    lead: "Pessoas com presença, credibilidade e afinidade com o público ampliaram organicamente a repercussão do evento.",
-    connection: "A VISITE identificou perfis estratégicos, conduziu os contatos e alinhou cada participação, funcionando como ponte entre o evento, os talentos e os objetivos de comunicação.",
+    tag: "ATIVAÇÃO · RELACIONAMENTO",
+    title: "Menos É Mais + JBL",
+    lead: <p>A aproximação com o Menos é Mais aconteceu através do Grupo Onda, conexão que possibilitou à VISITE atuar na articulação e no relacionamento entre as partes.</p>,
+    connection: <p>A partir dessa ponte, conduzimos os alinhamentos necessários e contribuímos para transformar a oportunidade em uma conexão estratégica.</p>,
     stats: [["Rede", "de embaixadores estratégicos"], ["Além", "do espaço físico"]],
     images: ["/cases/menos-01.webp", "/cases/menos-02.webp", "/cases/menos-03.webp"],
   },
   {
-    number: "03",
-    tag: <>JBL + <strong>LUAN SANTANA</strong> · REGISTRO HISTÓRICO</>,
-    title: "O Palco é Seu: do público para o centro da experiência",
-    lead: "A ativação convidou fãs a entrar no universo do artista e sentir, por alguns minutos, como seria ocupar o seu palco.",
-    connection: "A VISITE atuou presencialmente na organização da experiência e na distribuição de fitas salva celular, aproximando a JBL do público com uma entrega útil, segura e memorável.",
+    number: "02",
+    tag: "EXPERIÊNCIA · REGISTRO HISTÓRICO",
+    title: "Luan Santana + JBL",
+    lead: <p>A ativação convidou fãs a entrar no universo do artista e sentir, por alguns minutos, como seria ocupar o seu palco.</p>,
+    connection: <p>A VISITE atuou presencialmente na organização da experiência e na distribuição de fitas salva celular, aproximando a JBL do público com uma entrega útil, segura e memorável.</p>,
     stats: [["Fãs", "no centro da ativação"], ["Presença", "funcional e emocional"]],
     images: ["/cases/luan-01.webp", "/cases/luan-02.webp", "/cases/luan-03.webp", "/cases/luan-04.webp"],
   },
   {
-    number: "04",
-    tag: "JBL + CENA ELETRÔNICA",
-    title: "Uma conexão que chegou aos grandes nomes da cena",
-    lead: <>Produtos promocionais chegaram a artistas e projetos como <strong>WhoMadeWho</strong>, <strong>Dubdogz</strong>, <strong>Ashibah</strong>, <strong>Sarah Stenzel</strong> e <strong>Vintage Culture</strong>.</>,
-    connection: <>A VISITE conectou marca, produções e talentos, organizando acessos e acompanhando cada entrega. A caixa personalizada para <strong>Vintage Culture</strong> transformou o produto em uma experiência exclusiva de marca.</>,
+    number: "03",
+    tag: "BASTIDORES · MÚSICA ELETRÔNICA",
+    title: "Cena eletrônica + JBL",
+    lead: <>
+      <h3 className="case-story-heading">JBL nos bastidores da música eletrônica</h3>
+      <p className="case-story-subtitle">Uma conexão que chegou aos grandes nomes da cena</p>
+      <p>Durante uma programação que reuniu grandes nomes da música eletrônica, a JBL esteve presente também nos bastidores, aproximando a marca de artistas e projetos relevantes da cena.</p>
+      <p>A ação contemplou 18 artistas e projetos musicais, entre eles <strong>WhoMadeWho</strong>, <strong>Dubdogz</strong>, <strong>Ashibah</strong>, <strong>Sarah Stenzel</strong> e <strong>Vintage Culture</strong>, que recebeu uma entrega especial e personalizada da JBL, criando um momento exclusivo de relacionamento com a marca.</p>
+    </>,
+    connection: <>
+      <p>Através da conexão com a Morebass, a VISITE viabilizou a aproximação da JBL com os artistas e projetos presentes na programação, articulando o relacionamento entre marca, produção e talentos.</p>
+      <p>Nossa atuação envolveu a organização e o acompanhamento das entregas, o alinhamento com as produções e a condução dos acessos necessários para que cada produto chegasse aos artistas de forma cuidadosa e alinhada ao posicionamento da JBL.</p>
+      <p>Ao todo, foram realizadas 19 entregas para 18 artistas e projetos musicais. A conexão com a Morebass possibilitou transformar a presença da JBL nos bastidores em uma oportunidade de relacionamento com nomes relevantes da música eletrônica, ampliando a proximidade da marca com a cena e com os talentos que fazem parte dela.</p>
+    </>,
     stats: [["19", "entregas realizadas"], ["18", "artistas e projetos"]],
     images: ["/cases/entrega-05.webp", "/cases/entrega-02.webp", "/cases/entrega-03.webp"],
   },
   {
-    number: "05",
-    tag: <>MEET & GREET · <strong>DUBDOGZ</strong></>,
-    title: "Um encontro exclusivo entre artistas e convidados",
-    lead: "Uma experiência de proximidade planejada para acontecer com organização, fluidez e naturalidade.",
-    connection: "A VISITE conectou produção, artistas e convidados, alinhou os acessos e ofereceu o suporte presencial necessário para tornar o encontro seguro e especial.",
+    number: "04",
+    tag: "EXPERIÊNCIA · RELACIONAMENTO",
+    title: "Dubdogz + Meet & Greet",
+    lead: <p>Uma experiência de proximidade planejada para acontecer com organização, fluidez e naturalidade.</p>,
+    connection: <p>A VISITE conectou produção, artistas e convidados, alinhou os acessos e ofereceu o suporte presencial necessário para tornar o encontro seguro e especial.</p>,
     stats: [["Acesso", "organizado de ponta a ponta"], ["Encontro", "próximo e memorável"]],
     images: ["/cases/dubdogz-04.webp", "/cases/dubdogz-01.webp", "/cases/dubdogz-03.webp"],
   },
@@ -57,20 +58,19 @@ export const metadata = {
   description: "Conheça projetos reais articulados e executados pela VISITE entre marcas, artistas, eventos e públicos.",
 };
 
+function CaseTitle({ title }: { title: string }) {
+  const [attraction, ...partnerParts] = title.split(" + ");
+  const partner = partnerParts.join(" + ");
+
+  return <h2>{attraction} <span className="case-title-plus">+</span> {partner}</h2>;
+}
+
 export default function CasesPage() {
   return (
     <main id="conteudo-principal">
       <SiteHeader />
 
-      <section className="cases-intro section shell">
-        <p className="eyebrow"><span /> CASES</p>
-        <div className="cases-intro-grid">
-          <h1>Conexões que<br /><em>ganharam forma.</em></h1>
-          <div><p>Da estratégia à operação, estes projetos mostram como uma boa articulação transforma presença em experiência, relacionamento e valor de marca.</p></div>
-        </div>
-      </section>
-
-      <section className="real-case-list shell">
+      <section className="real-case-list real-case-list-no-intro shell" aria-label="Cases">
         {realCases.map((item, itemIndex) => (
           <article className={item.images.length ? "real-case" : "real-case real-case-no-photo"} key={item.number}>
             <div className="real-case-media">
@@ -88,16 +88,16 @@ export default function CasesPage() {
 
             <div className="real-case-copy">
               <span className="real-case-tag">{item.number} · {item.tag}</span>
-              <h2>{item.title}</h2>
-              <p className="real-case-lead">{item.lead}</p>
+              <CaseTitle title={item.title} />
+              <div className="real-case-lead">{item.lead}</div>
               <div className="case-stats">{item.stats.map(([value, label]) => <div key={label}><b>{value}</b><span>{label}</span></div>)}</div>
-              <div className="visite-connection"><span>A CONEXÃO VISITE</span><p>{item.connection}</p></div>
+              <div className="visite-connection"><span>A CONEXÃO VISITE</span>{item.connection}</div>
             </div>
           </article>
         ))}
       </section>
 
-      <section className="page-bridge section shell"><p>QUAL CONEXÃO PODE MOVER O SEU PRÓXIMO PROJETO?</p><Link href="/#contato" className="button">CONTE SEU DESAFIO <span>↗</span></Link></section>
+      <section className="page-bridge section shell"><p>QUAL CONEXÃO PODE MOVER O SEU PRÓXIMO PROJETO?</p><Link href="/#contato" className="button">CONTE SEU DESAFIO <ArrowUpRight /></Link></section>
       <ContactSection />
       <SiteFooter />
     </main>

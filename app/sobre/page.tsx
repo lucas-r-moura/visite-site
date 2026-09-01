@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight } from "@/components/ArrowUpRight";
 import { ContactSection } from "@/components/ContactSection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -77,7 +78,7 @@ export default function SobrePage() {
 
       <section className="page-bridge section shell">
         <p>CONHEÇA NOSSA FORMA DE TRANSFORMAR CONEXÕES EM RESULTADOS.</p>
-        <Link href="/metodo" className="button">EXPLORAR O VISITE METHOD <span>↗</span></Link>
+        <Link href="/metodo" className="button">EXPLORAR O VISITE METHOD <ArrowUpRight /></Link>
       </section>
       <ContactSection />
       <SiteFooter />

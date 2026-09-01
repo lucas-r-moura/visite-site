@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import Script from "next/script";
+import { ArrowUpRight } from "./ArrowUpRight";
 import { InstagramLink } from "./InstagramLink";
 
 const WHATSAPP = "5551997911036";
@@ -72,7 +73,7 @@ export function ContactSection() {
           <h2 className="safe-title">Seu próximo<br />projeto começa<br /><em>agora.</em></h2>
           <p>Conte o contexto, o objetivo e o que precisa avançar. Nós ajudamos a desenhar o caminho — e a encontrar os parceiros — certos.</p>
           <div className="contact-channels">
-            <a className="contact-phone" href={`https://wa.me/${WHATSAPP}`}>+55 51 99791-1036 <span>↗</span></a>
+            <a className="contact-phone" href={`https://wa.me/${WHATSAPP}`}>+55 51 99791-1036 <ArrowUpRight /></a>
             <InstagramLink />
           </div>
         </div>
@@ -100,7 +101,7 @@ export function ContactSection() {
             <p className="form-note form-note-error">Formulário temporariamente indisponível: verificação de segurança não configurada.</p>
           )}
           <button className="button" type="submit" disabled={status === "submitting" || !TURNSTILE_SITE_KEY}>
-            {status === "submitting" ? "ENVIANDO..." : "ENVIAR MENSAGEM"} <span>↗</span>
+            {status === "submitting" ? "ENVIANDO..." : "ENVIAR MENSAGEM"} <ArrowUpRight />
           </button>
           {feedback && <p className={`form-note${status === "error" ? " form-note-error" : " form-note-success"}`} role={status === "error" ? "alert" : "status"}>{feedback}</p>}
         </form>

@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "./ArrowUpRight";
+
 const INSTAGRAM_URL = "https://www.instagram.com/visite.conexoes/";
 
 type InstagramLinkProps = {
@@ -21,7 +23,7 @@ export function InstagramLink({ location = "contact" }: InstagramLinkProps) {
         </svg>
       </span>
       <span className="instagram-handle">@visite.conexoes</span>
-      <span className="instagram-arrow" aria-hidden="true">↗</span>
+      <ArrowUpRight className="instagram-arrow" />
     </a>
   );
 }

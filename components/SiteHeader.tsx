@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { ArrowUpRight } from "./ArrowUpRight";
 import { BrandLogo } from "./BrandLogo";
 
 export function SiteHeader() {
@@ -33,7 +34,7 @@ export function SiteHeader() {
         </nav>
 
         <Link className="button button-small header-cta" href="/#contato">
-          CONTE SEU DESAFIO <span aria-hidden="true">↗</span>
+          CONTE SEU DESAFIO <ArrowUpRight />
         </Link>
       </div>
     </header>

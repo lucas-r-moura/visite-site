@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowUpRight } from "@/components/ArrowUpRight";
 import { ContactSection } from "@/components/ContactSection";
 import { MethodFlow } from "@/components/MethodFlow";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -38,7 +39,7 @@ export default function MetodoPage() {
         <article className="side-card corporate"><span>CORPORATIVO · OPORTUNIDADES</span><h3>O lado que gera resultados.</h3><ul><li>Estratégia</li><li>Negócios</li><li>Parcerias</li><li>Marcas e oportunidades</li></ul></article>
       </section>
 
-      <section className="page-bridge section shell"><p>VOCÊ TRAZ O DESAFIO. NÓS DESENHAMOS O CAMINHO COMERCIAL.</p><Link href="/#contato" className="button">CONTAR MEU DESAFIO <span>↗</span></Link></section>
+      <section className="page-bridge section shell"><p>VOCÊ TRAZ O DESAFIO. NÓS DESENHAMOS O CAMINHO COMERCIAL.</p><Link href="/#contato" className="button">CONTAR MEU DESAFIO <ArrowUpRight /></Link></section>
       <ContactSection />
       <SiteFooter />
     </main>

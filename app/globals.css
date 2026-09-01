@@ -59,7 +59,8 @@ h1 > em:last-child, h2 > em:last-child, h3 > em:last-child { padding-right: .16e
 .eyebrow > span { width: 36px; height: 1px; background: var(--gradient); }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; padding: 16px 20px; border: 0; background: var(--gradient); color: #100a11; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; cursor: pointer; transition: transform 180ms ease, filter 180ms ease; }
 .button:hover { transform: translateY(-2px); filter: brightness(1.12); }
-.button span, .text-link span { font-family: "RobotoLocal", sans-serif; font-size: 18px; line-height: 0; }
+.arrow-icon { width: 16px; height: 16px; display: block; flex: 0 0 auto; overflow: visible; }
+.button .arrow-icon, .text-link .arrow-icon { width: 18px; height: 18px; }
 .button-small { padding: 12px 14px; font-size: 10px; gap: 10px; }
 .text-link { display: inline-flex; align-items: center; gap: 10px; padding-bottom: 7px; border-bottom: 1px solid currentColor; font-size: 11px; font-weight: 500; letter-spacing: 0.13em; }
 .section-link-row { display: flex; justify-content: flex-end; margin-top: 48px; }
@@ -204,7 +205,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .universe-list article:hover a { transform: translate(3px, -3px); }
 .universe-list h3 { margin: 0 0 5px; font-size: 27px; letter-spacing: -.03em; }
 .universe-list p { margin: 0; color: #b9b2b6; font-size: 14px; line-height: 1.4; }
-.universe-list a { color: var(--yellow); font-size: 25px; transition: transform 220ms ease; }
+.universe-list a { color: var(--yellow); transition: transform 220ms ease; }
+.universe-list a .arrow-icon { width: 25px; height: 25px; }
 
 /* Method - line and icon centers share the same 76px axis */
 .method { overflow: visible; }
@@ -230,7 +232,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .case-header { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr); align-items: flex-end; gap: 70px; margin-bottom: 48px; }
 .case-header > div:last-child > p { margin-bottom: 12px; color: var(--muted); line-height: 1.55; }
 .case-header small { color: #81797e; font-size: 8px; letter-spacing: .12em; }
-.case-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
+.case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
 .case-card { min-width: 0; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
 .case-image { height: 270px; margin-bottom: 22px; position: relative; overflow: hidden; background: #171317; }
 .case-image img { object-fit: cover; transition: transform 400ms ease; }
@@ -266,12 +268,12 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .contact-intro > p:not(.eyebrow) { max-width: 380px; color: #cbc4c8; line-height: 1.55; }
 .contact-channels { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; margin-top: 18px; }
 .contact-phone { display: inline-flex; align-items: center; gap: 15px; padding: 8px 0; border-bottom: 1px solid var(--yellow); font-family: "RobotoHeavy", sans-serif; font-size: 21px; }
-.contact-phone span { font-family: "RobotoLocal", sans-serif; }
+.contact-phone .arrow-icon { width: 17px; height: 17px; }
 .instagram-link { display: inline-flex; align-items: center; gap: 10px; width: fit-content; color: #d8d1d5; font-size: 13px; letter-spacing: .035em; transition: color 180ms ease, transform 180ms ease; }
 .instagram-icon { width: 34px; height: 34px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 50%; background: var(--gradient); box-shadow: 0 0 0 1px rgba(255,255,255,.05), 0 8px 24px rgba(109,50,167,.18); transition: box-shadow 180ms ease, transform 180ms ease; }
 .instagram-icon svg { width: 20px; height: 20px; stroke: #100c12; stroke-width: 1.8; }
 .instagram-icon .instagram-dot { fill: #100c12; stroke: none; }
-.instagram-arrow { color: var(--yellow); font-size: 15px; transition: transform 180ms ease; }
+.instagram-arrow { width: 15px; height: 15px; color: var(--yellow); transition: transform 180ms ease; }
 .instagram-link:hover { color: #fff; transform: translateX(2px); }
 .instagram-link:hover .instagram-icon { transform: scale(1.06); box-shadow: 0 0 22px rgba(249,115,22,.3), 0 8px 24px rgba(109,50,167,.24); }
 .instagram-link:hover .instagram-arrow { transform: translate(2px,-2px); }
@@ -345,7 +347,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .origin-conclusion strong { background: var(--gradient); color: transparent; background-clip: text; -webkit-background-clip: text; }
 .value-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .value-grid article { min-height: 250px; padding: 35px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; overflow: hidden; transition: background 280ms ease; }
-.value-grid article::after { content: "↗"; position: absolute; right: 28px; top: 28px; color: var(--yellow); font-size: 20px; opacity: 0; transform: translate(-7px, 7px); transition: opacity 240ms ease, transform 240ms ease; }
+.value-grid article::after { content: "↗︎"; position: absolute; right: 28px; top: 28px; color: var(--yellow); font-family: "RobotoLocal", sans-serif; font-size: 20px; opacity: 0; transform: translate(-7px, 7px); transition: opacity 240ms ease, transform 240ms ease; }
 .value-grid article:hover { background: linear-gradient(135deg, rgba(109,50,167,.14), rgba(249,115,22,.06)); }
 .value-grid article:hover::after { opacity: 1; transform: translate(0,0); }
 .value-grid span { color: var(--yellow); font-size: 10px; letter-spacing: .13em; }
@@ -433,7 +435,12 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .real-case-tag { display: block; margin-bottom: 18px; color: var(--yellow); font-size: 10px; line-height: 1.4; letter-spacing: .13em; }
 .real-case-tag strong { color: #fff; font-weight: 800; }
 .real-case-copy h2 { margin: 0 0 26px; font-size: clamp(39px, 4.5vw, 64px); line-height: .95; letter-spacing: -.055em; }
+.case-title-plus { font-family: "RobotoHeavy", sans-serif; font-size: .72em; letter-spacing: 0; }
 .real-case-lead { margin-bottom: 34px; color: #d2cbcf; font-size: 18px; line-height: 1.48; }
+.real-case-lead p { margin: 0; }
+.real-case-lead p + p { margin-top: 18px; }
+.case-story-heading { margin: 0 0 10px; color: #fff; font-family: "RobotoHeavy", sans-serif; font-size: 24px; line-height: 1.1; letter-spacing: -.02em; }
+.case-story-subtitle { color: var(--yellow); font-size: 13px; font-weight: 700; letter-spacing: .04em; }
 .real-case-lead strong, .visite-connection strong { color: #fff; font-weight: 800; }
 .case-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 38px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .case-stats > div { min-height: 102px; display: flex; flex-direction: column; justify-content: center; gap: 5px; padding: 18px 20px 18px 0; }
@@ -442,6 +449,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .case-stats span { color: #aaa3a7; font-size: 12px; line-height: 1.35; }
 .visite-connection > span { display: block; margin-bottom: 10px; color: #8f878c; font-size: 9px; letter-spacing: .15em; }
 .visite-connection p { margin: 0; color: #b9b2b6; font-size: 14px; line-height: 1.65; }
+.visite-connection p + p { margin-top: 16px; }
 .case-brand-poster { min-height: 610px; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(36px, 5vw, 70px); position: relative; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle at 75% 75%, rgba(249,115,22,.2), transparent 35%), radial-gradient(circle at 15% 20%, rgba(109,50,167,.22), transparent 40%), #0d0a0e; }
 .case-brand-poster::before { content: ""; width: 430px; height: 430px; position: absolute; right: -150px; bottom: -190px; border: 1px solid transparent; border-radius: 50%; background: linear-gradient(#0d0a0e,#0d0a0e) padding-box, var(--gradient) border-box; opacity: .75; }
 .case-brand-poster > span { max-width: 460px; position: relative; z-index: 1; font-family: "AllRound", "RobotoHeavy", sans-serif; font-size: clamp(54px, 7vw, 96px); line-height: .82; letter-spacing: -.06em; }

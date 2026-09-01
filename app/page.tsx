@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowUpRight } from "@/components/ArrowUpRight";
 import { ContactSection } from "@/components/ContactSection";
 import { HeroCursor } from "@/components/HeroCursor";
 import { MethodFlow } from "@/components/MethodFlow";
@@ -16,9 +17,9 @@ const deliverables = [
 ];
 
 const featuredCases = [
-  { tag: "JBL + GUNS N’ ROSES", title: "Uma ativação na dimensão da turnê", copy: "100 mil bandanas distribuídas em sete cidades transformaram um item promocional em parte da experiência dos fãs.", image: "/cases/guns-01.webp" },
-  { tag: "JBL + MÚSICA ELETRÔNICA", title: "A marca chegou aos bastidores", copy: "Articulação e acompanhamento de 19 entregas para 18 artistas e projetos musicais.", image: "/cases/entrega-05.webp" },
-  { tag: "EVENTO + EMBAIXADORES", title: "Influência a partir das conexões certas", copy: "Uma rede de convidados com afinidade real ampliou a presença e a repercussão do Menos É Mais.", image: "/cases/menos-01.webp" },
+  { tag: "ATIVAÇÃO · RELACIONAMENTO", title: "Menos É Mais + JBL", copy: "A aproximação através do Grupo Onda possibilitou à VISITE conduzir a articulação e o relacionamento entre as partes.", image: "/cases/menos-01.webp" },
+  { tag: "EXPERIÊNCIA · REGISTRO HISTÓRICO", title: "Luan Santana + JBL", copy: "Uma ativação que colocou os fãs no centro da experiência e aproximou a JBL do público.", image: "/cases/luan-01.webp" },
+  { tag: "BASTIDORES · MÚSICA ELETRÔNICA", title: "Cena eletrônica + JBL", copy: "Articulação e acompanhamento de 19 entregas para 18 artistas e projetos musicais.", image: "/cases/entrega-05.webp" },
 ];
 
 const faqs = [
@@ -43,8 +44,8 @@ export default function Home() {
           <h1>A parceria <em>certa</em><br />muda o jogo.</h1>
           <p className="hero-description">A VISITE estrutura relações comerciais entre marcas, artistas e eventos — da identificação da oportunidade à negociação, ativação e continuidade.</p>
           <div className="hero-actions">
-            <a className="button" href="#contato">CONTE SEU DESAFIO <span>↗</span></a>
-            <a className="text-link" href="#solucoes">VEJA COMO ATUAMOS <span>↗</span></a>
+            <a className="button" href="#contato">CONTE SEU DESAFIO <ArrowUpRight /></a>
+            <a className="text-link" href="#solucoes">VEJA COMO ATUAMOS <ArrowUpRight /></a>
           </div>
         </div>
         <div className="hero-art" aria-hidden="true">
@@ -71,9 +72,9 @@ export default function Home() {
           <p className="eyebrow"><span /> PARA QUEM CRIAMOS VALOR</p>
           <h2 className="safe-title">Três universos.<br /><em>Interesses que se encontram.</em></h2>
           <div className="universe-list">
-            <article className="universe-brand"><span className="index">01</span><div className="universe-symbol"><UniverseIcon type="brand" /></div><div><h3>MARCAS</h3><p>Patrocínios, collabs e ativações alinhados a posicionamento, audiência e objetivos comerciais.</p></div><a href="#contato" aria-label="Contar o desafio de uma marca">↗</a></article>
-            <article className="universe-event"><span className="index">02</span><div className="universe-symbol"><UniverseIcon type="event" /></div><div><h3>EVENTOS</h3><p>Prospecção de patrocinadores, proposta de valor e relações comerciais para fortalecer cada projeto.</p></div><a href="#contato" aria-label="Contar o desafio de um evento">↗</a></article>
-            <article className="universe-talent"><span className="index">03</span><div className="universe-symbol"><UniverseIcon type="talent" /></div><div><h3>TALENTOS</h3><p>Parcerias de marca coerentes com identidade, público, repertório e ambição profissional.</p></div><a href="#contato" aria-label="Contar o desafio de um talento">↗</a></article>
+            <article className="universe-brand"><span className="index">01</span><div className="universe-symbol"><UniverseIcon type="brand" /></div><div><h3>MARCAS</h3><p>Patrocínios, collabs e ativações alinhados a posicionamento, audiência e objetivos comerciais.</p></div><a href="#contato" aria-label="Contar o desafio de uma marca"><ArrowUpRight /></a></article>
+            <article className="universe-event"><span className="index">02</span><div className="universe-symbol"><UniverseIcon type="event" /></div><div><h3>EVENTOS</h3><p>Prospecção de patrocinadores, proposta de valor e relações comerciais para fortalecer cada projeto.</p></div><a href="#contato" aria-label="Contar o desafio de um evento"><ArrowUpRight /></a></article>
+            <article className="universe-talent"><span className="index">03</span><div className="universe-symbol"><UniverseIcon type="talent" /></div><div><h3>TALENTOS</h3><p>Parcerias de marca coerentes com identidade, público, repertório e ambição profissional.</p></div><a href="#contato" aria-label="Contar o desafio de um talento"><ArrowUpRight /></a></article>
           </div>
         </div>
       </section>
@@ -117,7 +118,7 @@ export default function Home() {
           <p>DA OPORTUNIDADE À CONTINUIDADE.</p>
         </div>
         <MethodFlow compact />
-        <div className="section-link-row"><Link className="text-link" href="/metodo">ENTENDA AS ENTREGAS DO MÉTODO <span>↗</span></Link></div>
+        <div className="section-link-row"><Link className="text-link" href="/metodo">ENTENDA AS ENTREGAS DO MÉTODO <ArrowUpRight /></Link></div>
       </section>
 
       <section className="cases section shell">
@@ -133,13 +134,13 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <div className="section-link-row"><Link className="text-link" href="/cases">CONHECER TODOS OS CASES <span>↗</span></Link></div>
+        <div className="section-link-row"><Link className="text-link" href="/cases">CONHECER TODOS OS CASES <ArrowUpRight /></Link></div>
       </section>
 
       <section className="founder-spotlight section">
         <div className="shell founder-grid">
           <div><p className="eyebrow"><span /> EXPERIÊNCIA À FRENTE DA VISITE</p><h2 className="safe-title">Mais de duas décadas<br /><em>fazendo relações avançarem.</em></h2></div>
-          <div><p className="founder-lead">A VISITE nasce da trajetória de sua fundadora no mercado de relacionamento, projetos e articulação comercial.</p><p>Esse repertório ajuda a reconhecer o parceiro certo, conduzir conversas sensíveis e transformar intenção em proposta, acordo e entrega.</p><Link className="text-link" href="/sobre">CONHEÇA A HISTÓRIA DA VISITE <span>↗</span></Link></div>
+          <div><p className="founder-lead">A VISITE nasce da trajetória de sua fundadora no mercado de relacionamento, projetos e articulação comercial.</p><p>Esse repertório ajuda a reconhecer o parceiro certo, conduzir conversas sensíveis e transformar intenção em proposta, acordo e entrega.</p><Link className="text-link" href="/sobre">CONHEÇA A HISTÓRIA DA VISITE <ArrowUpRight /></Link></div>
         </div>
       </section>
 
