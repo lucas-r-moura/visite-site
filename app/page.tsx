@@ -8,6 +8,7 @@ import { OpportunityJourney } from "@/components/OpportunityJourney";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { UniverseIcon } from "@/components/UniverseIcon";
+import { HIDDEN_CASES } from "@/lib/hidden-cases";
 
 const deliverables = [
   { number: "01", title: "Parcerias e patrocínios", copy: "Desenhamos o encontro entre objetivos, público e território para construir propostas com valor para todos os lados." },
@@ -141,12 +142,14 @@ export default function Home() {
           <div><p>Projetos em que estratégia, articulação e execução aproximaram marcas, artistas, eventos e seus públicos.</p></div>
         </div>
         <div className="case-grid">
-          {featuredCases.map((item) => (
+          {featuredCases
+            .filter((item) => !HIDDEN_CASES.includes(item.title))
+            .map((item) => (
             <article className="case-card" key={item.title}>
               <div className="case-image"><Image src={item.image} alt={item.title} fill sizes="(max-width: 800px) 100vw, 33vw" /></div>
               <span>{item.tag}</span><h3>{item.title}</h3><p>{item.copy}</p>
             </article>
-          ))}
+            ))}
         </div>
         <div className="section-link-row"><Link className="text-link" href="/cases">CONHECER TODOS OS CASES <ArrowUpRight /></Link></div>
       </section>

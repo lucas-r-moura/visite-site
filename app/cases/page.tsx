@@ -4,6 +4,7 @@ import { ContactSection } from "@/components/ContactSection";
 import { ArrowUpRight } from "@/components/ArrowUpRight";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { HIDDEN_CASES } from "@/lib/hidden-cases";
 
 const realCases = [
   {
@@ -84,7 +85,9 @@ export default function CasesPage() {
       <h1 className="visually-hidden">Cases da VISITE: parcerias entre marcas, artistas e eventos</h1>
 
       <section className="real-case-list real-case-list-no-intro shell" aria-label="Cases">
-        {realCases.map((item, itemIndex) => (
+        {realCases
+          .filter((item) => !HIDDEN_CASES.includes(item.title))
+          .map((item, itemIndex) => (
           <article className={item.images.length ? "real-case" : "real-case real-case-no-photo"} key={item.number}>
             <div className="real-case-media">
               {item.images.length ? (
@@ -107,7 +110,7 @@ export default function CasesPage() {
               <div className="visite-connection"><span>A CONEXÃO VISITE</span>{item.connection}</div>
             </div>
           </article>
-        ))}
+          ))}
       </section>
 
       <section className="page-bridge section shell"><p>QUAL CONEXÃO PODE MOVER O SEU PRÓXIMO PROJETO?</p><Link href="/#contato" className="button">CONTE SEU DESAFIO <ArrowUpRight /></Link></section>
