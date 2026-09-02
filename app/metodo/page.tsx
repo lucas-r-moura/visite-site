@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const metadata = {
   title: "VISITE Method | Nossa metodologia",
   description: "Identificar, conectar, negociar, ativar e relacionar: conheça o método da VISITE.",
+  alternates: { canonical: "/metodo" },
 };
 
 export default function MetodoPage() {
@@ -16,7 +17,7 @@ export default function MetodoPage() {
       <SiteHeader />
       <section className="method-page-flow method-page-start section shell">
         <p className="eyebrow"><span /> NOSSA METODOLOGIA</p>
-        <div className="method-heading"><h2>VISITE <em className="method-word">METHOD</em><sup>®</sup></h2><p>Nossa metodologia, seu resultado.</p></div>
+        <div className="method-heading"><h1>VISITE <em className="method-word">METHOD</em><sup>®</sup></h1><p>Nossa metodologia, seu resultado.</p></div>
         <MethodFlow />
       </section>
 

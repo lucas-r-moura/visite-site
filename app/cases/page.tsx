@@ -40,23 +40,34 @@ const realCases = [
       <p>Ao todo, foram realizadas 19 entregas para 18 artistas e projetos musicais. A conexão com a Morebass possibilitou transformar a presença da JBL nos bastidores em uma oportunidade de relacionamento com nomes relevantes da música eletrônica, ampliando a proximidade da marca com a cena e com os talentos que fazem parte dela.</p>
     </>,
     stats: [["19", "entregas realizadas"], ["18", "artistas e projetos"]],
+    gallery: "portrait",
     images: ["/cases/entrega-05.webp", "/cases/entrega-02.webp", "/cases/entrega-03.webp"],
   },
   {
     number: "04",
-    tag: "EXPERIÊNCIA · RELACIONAMENTO",
-    title: "Dubdogz + Meet & Greet",
+    tag: "MEET & GREET · RELACIONAMENTO",
+    title: "Dubdogz + JBL",
     lead: <p>Uma experiência de proximidade planejada para acontecer com organização, fluidez e naturalidade.</p>,
     connection: <p>A VISITE conectou produção, artistas e convidados, alinhou os acessos e ofereceu o suporte presencial necessário para tornar o encontro seguro e especial.</p>,
     stats: [["Acesso", "organizado de ponta a ponta"], ["Encontro", "próximo e memorável"]],
-    images: ["/cases/dubdogz-04.webp", "/cases/dubdogz-01.webp", "/cases/dubdogz-03.webp"],
+    gallery: "portrait",
+    images: ["/cases/dubdogz-01.webp", "/cases/dubdogz-04.webp", "/cases/dubdogz-03.webp"],
   },
 ];
 
 export const metadata = {
   title: "Cases | VISITE",
   description: "Conheça projetos reais articulados e executados pela VISITE entre marcas, artistas, eventos e públicos.",
+  alternates: { canonical: "/cases" },
 };
+
+function galleryClass(item: { images: string[]; gallery?: string }) {
+  return [
+    "real-case-gallery",
+    item.images.length === 4 ? "real-case-gallery-three" : "",
+    item.gallery === "portrait" ? "real-case-gallery-portrait" : "",
+  ].filter(Boolean).join(" ");
+}
 
 function CaseTitle({ title }: { title: string }) {
   const [attraction, ...partnerParts] = title.split(" + ");
@@ -70,6 +81,8 @@ export default function CasesPage() {
     <main id="conteudo-principal">
       <SiteHeader />
 
+      <h1 className="visually-hidden">Cases da VISITE: parcerias entre marcas, artistas e eventos</h1>
+
       <section className="real-case-list real-case-list-no-intro shell" aria-label="Cases">
         {realCases.map((item, itemIndex) => (
           <article className={item.images.length ? "real-case" : "real-case real-case-no-photo"} key={item.number}>
@@ -77,7 +90,7 @@ export default function CasesPage() {
               {item.images.length ? (
                 <>
                   <div className="real-case-cover"><Image src={item.images[0]} alt={`${item.title} — registro principal`} fill priority={itemIndex === 0} sizes="(max-width: 860px) 100vw, 53vw" /></div>
-                  <div className={`real-case-gallery${item.images.length === 4 ? " real-case-gallery-three" : ""}`}>
+                  <div className={galleryClass(item)}>
                     {item.images.slice(1).map((image, index) => <div key={image}><Image src={image} alt={`${item.title} — registro ${index + 2}`} fill sizes="(max-width: 860px) 50vw, 26vw" /></div>)}
                   </div>
                 </>

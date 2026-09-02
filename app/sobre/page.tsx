@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const metadata = {
   title: "Sobre a VISITE | Conexões estratégicas",
   description: "Conheça a essência, o propósito e a forma de atuação da VISITE.",
+  alternates: { canonical: "/sobre" },
 };
 
 export default function SobrePage() {

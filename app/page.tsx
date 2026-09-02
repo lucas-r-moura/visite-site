@@ -33,6 +33,20 @@ const faqs = [
   ["Como funciona o investimento?", "Cada trabalho é personalizado. O formato de contratação e os valores são apresentados depois que entendemos o desafio e o escopo necessário."],
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(([question, answer]) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
+};
+
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
   return (
     <main id="conteudo-principal">
@@ -148,6 +162,7 @@ export default function Home() {
         <p className="eyebrow"><span /> DÚVIDAS FREQUENTES</p>
         <h2 className="safe-title">Antes do primeiro contato,<br /><em>o essencial.</em></h2>
         {faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </section>
 
       <ContactSection />
