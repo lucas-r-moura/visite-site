@@ -9,47 +9,85 @@ import { HIDDEN_CASES } from "@/lib/hidden-cases";
 const realCases = [
   {
     number: "01",
-    tag: "ATIVAÇÃO · RELACIONAMENTO",
+    tag: "TURNÊ NACIONAL · ATIVAÇÃO",
+    title: "Guns N’ Roses + JBL",
+    lead: <>
+      <p className="case-story-subtitle">Uma ativação na dimensão de uma turnê histórica</p>
+      <p>A passagem do Guns N’ Roses pelo Brasil reuniu milhares de fãs em uma das turnês mais aguardadas do ano. Para ampliar a presença da JBL durante essa experiência, foi realizada uma ativação de grande escala em sete cidades brasileiras (Porto Alegre, Campo Grande, Cariacica, Salvador, Fortaleza, São Luís e Belém).</p>
+      <p>Ao longo da turnê, foram distribuídas 100 mil bandanas personalizadas. Mais do que um brinde, elas passaram a fazer parte do visual do público e da atmosfera dos shows, criando uma presença de marca espontânea, coletiva e altamente fotografável.</p>
+      <p>A ação transformou um item promocional em um símbolo da experiência, conectando a identidade da JBL à energia do Guns N’ Roses e deixando uma lembrança física para os fãs.</p>
+    </>,
+    connection: <>
+      <p>A VISITE atuou na articulação e na execução da ativação nas sete cidades, conectando estratégia, produção e operação para garantir que as 100 mil bandanas chegassem ao público de maneira organizada e alinhada à experiência da turnê.</p>
+      <p>Nossa participação envolveu o planejamento da operação, a coordenação das equipes, o acompanhamento das entregas e a conexão entre os diferentes profissionais e parceiros envolvidos.</p>
+      <p>Com presença próxima em todas as etapas, contribuímos para transformar a distribuição em um ponto real de contato entre a JBL, o Guns N’ Roses e milhares de fãs pelo Brasil.</p>
+    </>,
+    stats: [["7", "cidades brasileiras"], ["100 mil", "bandanas distribuídas"]],
+    images: ["/cases/guns-01.webp", "/cases/guns-02.webp", "/cases/guns-03.webp"],
+  },
+  {
+    number: "02",
+    tag: "EMBAIXADORES · RELACIONAMENTO",
     title: "Menos É Mais + JBL",
-    lead: <p>A aproximação com o Menos é Mais aconteceu através do Grupo Onda, conexão que possibilitou à VISITE atuar na articulação e no relacionamento entre as partes.</p>,
-    connection: <p>A partir dessa ponte, conduzimos os alinhamentos necessários e contribuímos para transformar a oportunidade em uma conexão estratégica.</p>,
+    lead: <>
+      <p className="case-story-subtitle">Influência construída a partir das conexões certas</p>
+      <p>A presença do Menos É Mais foi potencializada por uma estratégia de aproximação com embaixadores capazes de ampliar organicamente a repercussão do evento. A proposta foi conectar o projeto a pessoas com presença, credibilidade e afinidade com o público, criando uma divulgação próxima, verdadeira e relevante.</p>
+      <p>A participação dos convidados ajudou a expandir a experiência para além do espaço físico, gerando conteúdo, visibilidade e novas conversas em torno do evento.</p>
+    </>,
+    connection: <>
+      <p>A aproximação com o Menos é Mais aconteceu através do Grupo Onda, conexão que possibilitou à VISITE atuar na articulação e no relacionamento entre as partes.</p>
+      <p>A partir dessa ponte, conduzimos os alinhamentos necessários e contribuímos para transformar a oportunidade em uma conexão estratégica.</p>
+    </>,
     stats: [["Rede", "de embaixadores estratégicos"], ["Além", "do espaço físico"]],
     images: ["/cases/menos-01.webp", "/cases/menos-02.webp", "/cases/menos-03.webp"],
   },
   {
-    number: "02",
+    number: "03",
     tag: "EXPERIÊNCIA · REGISTRO HISTÓRICO",
     title: "Luan Santana + JBL",
-    lead: <p>A ativação convidou fãs a entrar no universo do artista e sentir, por alguns minutos, como seria ocupar o seu palco.</p>,
-    connection: <p>A VISITE atuou presencialmente na organização da experiência e na distribuição de fitas salva celular, aproximando a JBL do público com uma entrega útil, segura e memorável.</p>,
+    lead: <>
+      <p className="case-story-subtitle">Do público para o centro do palco</p>
+      <p>Criada pela JBL para a turnê Registro Histórico, de Luan Santana, a ativação “O Palco é Seu” transformou o sonho dos fãs em uma experiência de protagonismo. A proposta convidava o público a entrar no universo do artista e sentir, por alguns minutos, como seria ocupar o seu palco.</p>
+      <p>A experiência ampliou a presença da JBL para além do show, criando um momento interativo, emocional e diretamente conectado à música. A ação também contou com a distribuição de fitas salva celular, unindo utilidade, segurança e visibilidade de marca durante o evento.</p>
+    </>,
+    connection: <>
+      <p>A VISITE atuou presencialmente na ativação, contribuindo para a organização da experiência e para a aproximação da JBL com o público. Também fomos responsáveis pela distribuição das fitas salva celular, garantindo que os itens chegassem aos fãs de maneira organizada e integrada à jornada do evento.</p>
+      <p>Enquanto “O Palco é Seu” colocava os fãs no centro da experiência, nossa atuação ajudava a transformar a presença da marca em um contato próximo, funcional e memorável.</p>
+    </>,
     stats: [["Fãs", "no centro da ativação"], ["Presença", "funcional e emocional"]],
     images: ["/cases/luan-01.webp", "/cases/luan-02.webp", "/cases/luan-03.webp", "/cases/luan-04.webp"],
   },
   {
-    number: "03",
+    number: "04",
     tag: "BASTIDORES · MÚSICA ELETRÔNICA",
     title: "Cena eletrônica + JBL",
     lead: <>
-      <h3 className="case-story-heading">JBL nos bastidores da música eletrônica</h3>
       <p className="case-story-subtitle">Uma conexão que chegou aos grandes nomes da cena</p>
-      <p>Durante uma programação que reuniu grandes nomes da música eletrônica, a JBL esteve presente também nos bastidores, aproximando a marca de artistas e projetos relevantes da cena.</p>
-      <p>A ação contemplou 18 artistas e projetos musicais, entre eles <strong>WhoMadeWho</strong>, <strong>Dubdogz</strong>, <strong>Ashibah</strong>, <strong>Sarah Stenzel</strong> e <strong>Vintage Culture</strong>, que recebeu uma entrega especial e personalizada da JBL, criando um momento exclusivo de relacionamento com a marca.</p>
+      <p>Durante uma programação que reuniu grandes nomes da música eletrônica, a JBL promoveu a entrega de produtos promocionais para 18 artistas e projetos musicais, entre eles <strong>WhoMadeWho</strong>, <strong>Dubdogz</strong>, <strong>Ashibah</strong>, <strong>Sarah Stenzel</strong> e <strong>Vintage Culture</strong>.</p>
+      <p>Como destaque especial da ação, <strong>Vintage Culture</strong> recebeu uma caixa personalizada da JBL, desenvolvida para tornar a entrega ainda mais exclusiva e fortalecer a conexão da marca com um dos principais nomes da música eletrônica brasileira.</p>
     </>,
     connection: <>
-      <p>Através da conexão com a Morebass, a VISITE viabilizou a aproximação da JBL com os artistas e projetos presentes na programação, articulando o relacionamento entre marca, produção e talentos.</p>
-      <p>Nossa atuação envolveu a organização e o acompanhamento das entregas, o alinhamento com as produções e a condução dos acessos necessários para que cada produto chegasse aos artistas de forma cuidadosa e alinhada ao posicionamento da JBL.</p>
-      <p>Ao todo, foram realizadas 19 entregas para 18 artistas e projetos musicais. A conexão com a Morebass possibilitou transformar a presença da JBL nos bastidores em uma oportunidade de relacionamento com nomes relevantes da música eletrônica, ampliando a proximidade da marca com a cena e com os talentos que fazem parte dela.</p>
+      <p>Através da conexão com a Morebass, a VISITE aproximou a JBL dos artistas e projetos presentes, articulando marca, produções e talentos. Nossa atuação envolveu a organização das entregas, o alinhamento com as produções e o acompanhamento dos acessos.</p>
+      <p>Ao todo, foram 19 entregas para 18 artistas e projetos musicais, fortalecendo a presença da JBL nos bastidores e sua proximidade com nomes relevantes da cena eletrônica.</p>
     </>,
     stats: [["19", "entregas realizadas"], ["18", "artistas e projetos"]],
     gallery: "portrait",
-    images: ["/cases/entrega-05.webp", "/cases/entrega-02.webp", "/cases/entrega-03.webp"],
+    images: ["/cases/eletronica-01.webp", "/cases/eletronica-02.webp", "/cases/eletronica-03.webp", "/cases/eletronica-04.webp"],
   },
   {
-    number: "04",
+    number: "05",
     tag: "MEET & GREET · RELACIONAMENTO",
     title: "Dubdogz + JBL",
-    lead: <p>Uma experiência de proximidade planejada para acontecer com organização, fluidez e naturalidade.</p>,
-    connection: <p>A VISITE conectou produção, artistas e convidados, alinhou os acessos e ofereceu o suporte presencial necessário para tornar o encontro seguro e especial.</p>,
+    lead: <>
+      <p className="case-story-subtitle">Um encontro exclusivo entre artistas e convidados</p>
+      <p>O Meet &amp; Greet com o Dubdogz proporcionou aos convidados uma experiência exclusiva de proximidade com os artistas. O encontro foi planejado para acontecer de maneira organizada e fluida, criando um momento especial dentro da programação.</p>
+      <p>A ação aproximou público e artistas em um ambiente reservado, fortalecendo a relação entre experiência, música e marca.</p>
+    </>,
+    connection: <>
+      <p>A VISITE atuou na organização e no acompanhamento do Meet &amp; Greet, realizando a conexão entre produção, artistas e convidados.</p>
+      <p>Nossa participação envolveu o alinhamento dos acessos, a organização do encontro e o suporte presencial necessário para que a experiência acontecesse com segurança, fluidez e naturalidade.</p>
+      <p>A atuação reforçou o principal papel da VISITE, aproximar as pessoas certas e transformar conexões estratégicas em experiências memoráveis.</p>
+    </>,
     stats: [["Acesso", "organizado de ponta a ponta"], ["Encontro", "próximo e memorável"]],
     gallery: "portrait",
     images: ["/cases/dubdogz-01.webp", "/cases/dubdogz-04.webp", "/cases/dubdogz-03.webp"],

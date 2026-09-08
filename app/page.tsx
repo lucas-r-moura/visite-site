@@ -18,9 +18,9 @@ const deliverables = [
 ];
 
 const featuredCases = [
-  { tag: "ATIVAÇÃO · RELACIONAMENTO", title: "Menos É Mais + JBL", copy: "A aproximação através do Grupo Onda possibilitou à VISITE conduzir a articulação e o relacionamento entre as partes.", image: "/cases/menos-01.webp" },
+  { tag: "TURNÊ NACIONAL · ATIVAÇÃO", title: "Guns N’ Roses + JBL", copy: "Ativação em sete cidades brasileiras: 100 mil bandanas que passaram a fazer parte do visual do público.", image: "/cases/guns-01.webp" },
+  { tag: "EMBAIXADORES · RELACIONAMENTO", title: "Menos É Mais + JBL", copy: "A aproximação através do Grupo Onda possibilitou à VISITE conduzir a articulação e o relacionamento entre as partes.", image: "/cases/menos-01.webp" },
   { tag: "EXPERIÊNCIA · REGISTRO HISTÓRICO", title: "Luan Santana + JBL", copy: "Uma ativação que colocou os fãs no centro da experiência e aproximou a JBL do público.", image: "/cases/luan-01.webp" },
-  { tag: "BASTIDORES · MÚSICA ELETRÔNICA", title: "Cena eletrônica + JBL", copy: "Articulação e acompanhamento de 19 entregas para 18 artistas e projetos musicais.", image: "/cases/entrega-05.webp" },
 ];
 
 const faqs = [
