@@ -141,7 +141,7 @@ export default function CasesPage() {
             </div>
 
             <div className="real-case-copy">
-              <span className="real-case-tag">{item.number} · {item.tag}</span>
+              <span className="real-case-tag">{String(itemIndex + 1).padStart(2, "0")} · {item.tag}</span>
               <CaseTitle title={item.title} />
               <div className="real-case-lead">{item.lead}</div>
               <div className="case-stats">{item.stats.map(([value, label]) => <div key={label}><b>{value}</b><span>{label}</span></div>)}</div>
