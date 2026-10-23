@@ -31,3 +31,6 @@ Thumbs.db
 
 # Originais em alta das fotos ja convertidas para public/cases (nao precisam ir no repo)
 midia-fonte/novas/
+
+# Cache incremental do TypeScript (recriado a cada tsc)
+tsconfig.tsbuildinfo

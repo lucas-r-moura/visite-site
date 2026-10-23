@@ -1,0 +1,10 @@
+# Cabecalhos aplicados pelo Cloudflare Pages a todas as respostas.
+# Sem Content-Security-Policy de proposito: o site carrega scripts de
+# terceiros (Turnstile, e futuramente GTM/GA4) e uma CSP mal calibrada
+# quebraria o formulario em producao sem aviso.
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000
