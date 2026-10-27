@@ -291,6 +291,16 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
 .instagram-link-footer .instagram-icon { width: 27px; height: 27px; }
 .instagram-link-footer .instagram-icon svg { width: 16px; height: 16px; }
 
+.footer-link-button { padding: 0; border: 0; background: none; color: inherit; font: inherit; letter-spacing: inherit; text-align: inherit; cursor: pointer; }
+
+/* Cookie consent */
+.cookie-banner { position: fixed; left: 24px; bottom: 24px; z-index: 150; width: min(560px, calc(100% - 48px)); display: grid; gap: 18px; padding: 22px 24px; border: 1px solid var(--line); background: var(--ink-soft); color: #d9d3d6; font-size: 13px; line-height: 1.6; box-shadow: 0 18px 50px rgba(0, 0, 0, .45); }
+.cookie-banner p { margin: 0; }
+.cookie-banner a { color: #fff; text-decoration: underline; }
+.cookie-banner-actions { display: flex; justify-content: flex-end; gap: 12px; }
+.cookie-banner-reject { padding: 12px 14px; border: 1px solid rgba(255, 255, 255, .45); background: transparent; color: #fff; font-size: 10px; font-weight: 500; letter-spacing: .12em; cursor: pointer; transition: border-color 180ms ease; }
+.cookie-banner-reject:hover { border-color: #fff; }
+
 /* Internal pages */
 .internal-hero { min-height: 600px; display: flex; flex-direction: column; justify-content: center; position: relative; border-bottom: 1px solid var(--line); }
 .internal-hero::after { content: ""; position: absolute; width: 370px; height: 370px; right: 2%; top: 50%; transform: translateY(-50%); border: 1px solid rgba(249,115,22,.6); border-radius: 50%; background: radial-gradient(circle, rgba(249,115,22,.11), transparent 62%), url('/assets/visite-symbol.png') center / 55% auto no-repeat; box-shadow: 0 0 100px rgba(109,50,167,.18); opacity: .92; pointer-events: none; }
@@ -523,6 +533,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-botto
   .founder-grid .founder-lead { font-size: 19px; }
   .site-footer { grid-template-columns: 1fr; }
   .footer-links { text-align: left; }
+  .cookie-banner { left: 19px; bottom: 19px; width: calc(100% - 38px); padding: 20px; }
+  .cookie-banner-actions > * { flex: 1; }
   .instagram-link-footer { align-self: flex-start; }
   .internal-hero { min-height: 560px; }
   .internal-hero h1 { font-size: clamp(52px, 15vw, 76px); }

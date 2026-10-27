@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CookieBanner } from "@/components/CookieConsent";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
 import "./globals.css";
 
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <SiteAnalytics />
+        <CookieBanner />
       </body>
     </html>
   );

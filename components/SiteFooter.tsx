@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BrandLogo } from "./BrandLogo";
+import { CookiePreferencesButton } from "./CookieConsent";
 import { InstagramLink } from "./InstagramLink";
 
 export function SiteFooter() {
@@ -16,6 +17,7 @@ export function SiteFooter() {
         <a href="mailto:comercial@visiteconexoes.com.br">comercial@visiteconexoes.com.br</a>
         <Link href="/privacidade">Privacidade</Link>
         <Link href="/termos">Termos de uso</Link>
+        <CookiePreferencesButton />
       </div>
     </footer>
   );
